@@ -1,0 +1,66 @@
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\obj\Debug\HealthBot.csprojResolveAssemblyReference.cache
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Bot Application1.dll.config
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Bot Application1.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Bot Application1.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Antlr3.Runtime.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Autofac.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Chronic.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\EntityFramework.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\EntityFramework.SqlServer.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\log4net.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Bot.Builder.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Bot.Connector.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Web.Infrastructure.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Newtonsoft.Json.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Net.Http.Formatting.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Helpers.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Http.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Http.WebHost.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Mvc.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Optimization.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Razor.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.WebPages.Deployment.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.WebPages.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.WebPages.Razor.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\WebGrease.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Antlr3.Runtime.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Autofac.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\EntityFramework.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\EntityFramework.SqlServer.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\log4net.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Bot.Builder.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.Bot.Connector.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\Newtonsoft.Json.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Net.Http.Formatting.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Helpers.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Http.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Http.WebHost.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Mvc.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Optimization.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.Razor.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.WebPages.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.WebPages.Deployment.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\System.Web.WebPages.Razor.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\obj\Debug\Bot Application1.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\HealthBot\obj\Debug\Bot Application1.pdb

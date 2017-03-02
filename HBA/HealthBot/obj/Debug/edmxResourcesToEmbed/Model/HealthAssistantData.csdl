@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HealthAssistantModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DiarioPaziente">
+    <Key>
+      <PropertyRef Name="ProgEvento" />
+    </Key>
+    <Property Name="ProgEvento" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPaziente" Type="Int64" Nullable="false" />
+    <Property Name="Chiave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Valore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DataOraInserimento" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Paziente" Relationship="Self.fk_DiarioPaziente_Paziente_IdPaziente" FromRole="DiarioPaziente" ToRole="Paziente" />
+  </EntityType>
+  <EntityType Name="FenotipoPaziente">
+    <Key>
+      <PropertyRef Name="ProgFenotipo" />
+    </Key>
+    <Property Name="ProgFenotipo" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPaziente" Type="Int64" Nullable="false" />
+    <Property Name="Chiave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Valore" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DataOraInserimento" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Paziente" Relationship="HealthAssistantModel.fk_FenotipoPaziente_Paziente_IdPaziente" FromRole="FenotipoPaziente" ToRole="Paziente" />
+  </EntityType>
+  <EntityType Name="MessageLogging">
+    <Key>
+      <PropertyRef Name="ProgLog" />
+    </Key>
+    <Property Name="ProgLog" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPaziente" Type="Int64" Nullable="false" />
+    <Property Name="MessageInput" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MessageOutput" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DataOraInserimento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsMessaggioNonGestito" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Paziente">
+    <Key>
+      <PropertyRef Name="IdPaziente" />
+    </Key>
+    <Property Name="IdPaziente" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodiceFiscale" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DataPrimoInserimento" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="DiarioPaziente" Relationship="Self.fk_DiarioPaziente_Paziente_IdPaziente" FromRole="Paziente" ToRole="DiarioPaziente" />
+    <Property Name="Nome" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Cognome" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DataNascita" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="FenotipoPaziente" Relationship="HealthAssistantModel.fk_FenotipoPaziente_Paziente_IdPaziente" FromRole="Paziente" ToRole="FenotipoPaziente" />
+    <Property Name="ConversationId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FromId" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="FromName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ValoriNutrizionali">
+    <Key>
+      <PropertyRef Name="Nome" />
+    </Key>
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pezzi" Type="Int32" Nullable="false" />
+    <Property Name="Grammi" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="CarboidratiSemplici" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="CarboidratiComplessi" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Fibre" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Proteine" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Acqua" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_DiarioPaziente_Paziente_IdPaziente">
+    <End Role="Paziente" Type="Self.Paziente" Multiplicity="1" />
+    <End Role="DiarioPaziente" Type="Self.DiarioPaziente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paziente">
+        <PropertyRef Name="IdPaziente" />
+      </Principal>
+      <Dependent Role="DiarioPaziente">
+        <PropertyRef Name="IdPaziente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HealthAssistantEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DiarioPaziente" EntityType="Self.DiarioPaziente" />
+    <EntitySet Name="FenotipoPaziente" EntityType="Self.FenotipoPaziente" />
+    <EntitySet Name="MessageLogging" EntityType="Self.MessageLogging" />
+    <EntitySet Name="Paziente" EntityType="Self.Paziente" />
+    <EntitySet Name="ValoriNutrizionali" EntityType="Self.ValoriNutrizionali" />
+    <AssociationSet Name="fk_DiarioPaziente_Paziente_IdPaziente" Association="Self.fk_DiarioPaziente_Paziente_IdPaziente">
+      <End Role="Paziente" EntitySet="Paziente" />
+      <End Role="DiarioPaziente" EntitySet="DiarioPaziente" />
+    </AssociationSet>
+    <EntitySet Name="C__RefactorLog" EntityType="HealthAssistantModel.C__RefactorLog" />
+    <AssociationSet Name="fk_FenotipoPaziente_Paziente_IdPaziente" Association="HealthAssistantModel.fk_FenotipoPaziente_Paziente_IdPaziente">
+      <End Role="Paziente" EntitySet="Paziente" />
+      <End Role="FenotipoPaziente" EntitySet="FenotipoPaziente" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__RefactorLog">
+    <Key>
+      <PropertyRef Name="OperationKey" />
+    </Key>
+    <Property Name="OperationKey" Type="Guid" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_FenotipoPaziente_Paziente_IdPaziente">
+    <End Type="HealthAssistantModel.Paziente" Role="Paziente" Multiplicity="1" />
+    <End Type="HealthAssistantModel.FenotipoPaziente" Role="FenotipoPaziente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paziente">
+        <PropertyRef Name="IdPaziente" />
+      </Principal>
+      <Dependent Role="FenotipoPaziente">
+        <PropertyRef Name="IdPaziente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

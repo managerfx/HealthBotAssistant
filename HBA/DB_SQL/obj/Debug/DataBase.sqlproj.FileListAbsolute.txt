@@ -1,0 +1,9 @@
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\bin\Debug\DataBase.dacpac
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\bin\Debug\DataBase.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\bin\Debug\DataBase.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\DataBase.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\DataBase.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\Model.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\refactor.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\postdeploy.sql
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\predeploy.sql

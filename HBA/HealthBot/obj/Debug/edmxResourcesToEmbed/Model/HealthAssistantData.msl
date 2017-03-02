@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HealthAssistantModelStoreContainer" CdmEntityContainer="HealthAssistantEntities">
+    <EntitySetMapping Name="DiarioPaziente">
+      <EntityTypeMapping TypeName="HealthAssistantModel.DiarioPaziente">
+        <MappingFragment StoreEntitySet="DiarioPaziente">
+          <ScalarProperty Name="ProgEvento" ColumnName="ProgEvento" />
+          <ScalarProperty Name="IdPaziente" ColumnName="IdPaziente" />
+          <ScalarProperty Name="Chiave" ColumnName="Chiave" />
+          <ScalarProperty Name="Valore" ColumnName="Valore" />
+          <ScalarProperty Name="DataOraInserimento" ColumnName="DataOraInserimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FenotipoPaziente">
+      <EntityTypeMapping TypeName="HealthAssistantModel.FenotipoPaziente">
+        <MappingFragment StoreEntitySet="FenotipoPaziente">
+          <ScalarProperty Name="ProgFenotipo" ColumnName="ProgFenotipo" />
+          <ScalarProperty Name="IdPaziente" ColumnName="IdPaziente" />
+          <ScalarProperty Name="Chiave" ColumnName="Chiave" />
+          <ScalarProperty Name="Valore" ColumnName="Valore" />
+          <ScalarProperty Name="DataOraInserimento" ColumnName="DataOraInserimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageLogging">
+      <EntityTypeMapping TypeName="HealthAssistantModel.MessageLogging">
+        <MappingFragment StoreEntitySet="MessageLogging">
+          <ScalarProperty Name="ProgLog" ColumnName="ProgLog" />
+          <ScalarProperty Name="IdPaziente" ColumnName="IdPaziente" />
+          <ScalarProperty Name="MessageInput" ColumnName="MessageInput" />
+          <ScalarProperty Name="MessageOutput" ColumnName="MessageOutput" />
+          <ScalarProperty Name="DataOraInserimento" ColumnName="DataOraInserimento" />
+          <ScalarProperty Name="IsMessaggioNonGestito" ColumnName="IsMessaggioNonGestito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paziente">
+      <EntityTypeMapping TypeName="HealthAssistantModel.Paziente">
+        <MappingFragment StoreEntitySet="Paziente">
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="FromId" ColumnName="FromId" />
+          <ScalarProperty Name="ConversationId" ColumnName="ConversationId" />
+          <ScalarProperty Name="DataNascita" ColumnName="DataNascita" />
+          <ScalarProperty Name="Cognome" ColumnName="Cognome" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="IdPaziente" ColumnName="IdPaziente" />
+          <ScalarProperty Name="CodiceFiscale" ColumnName="CodiceFiscale" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DataPrimoInserimento" ColumnName="DataPrimoInserimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ValoriNutrizionali">
+      <EntityTypeMapping TypeName="HealthAssistantModel.ValoriNutrizionali">
+        <MappingFragment StoreEntitySet="ValoriNutrizionali">
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Pezzi" ColumnName="Pezzi" />
+          <ScalarProperty Name="Grammi" ColumnName="Grammi" />
+          <ScalarProperty Name="CarboidratiSemplici" ColumnName="CarboidratiSemplici" />
+          <ScalarProperty Name="CarboidratiComplessi" ColumnName="CarboidratiComplessi" />
+          <ScalarProperty Name="Fibre" ColumnName="Fibre" />
+          <ScalarProperty Name="Proteine" ColumnName="Proteine" />
+          <ScalarProperty Name="Acqua" ColumnName="Acqua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C__RefactorLog">
+      <EntityTypeMapping TypeName="HealthAssistantModel.C__RefactorLog">
+        <MappingFragment StoreEntitySet="__RefactorLog">
+          <ScalarProperty Name="OperationKey" ColumnName="OperationKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

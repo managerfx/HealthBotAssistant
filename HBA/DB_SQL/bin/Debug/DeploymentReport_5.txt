@@ -1,0 +1,32 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[DiarioPaziente] (Table)
+       [dbo].[FenotipoPaziente] (Table)
+       [dbo].[MessageLogging] (Table)
+       [dbo].[Paziente] (Table)
+       [dbo].[ValoriNutrizionali] (Table)
+       Default Constraint: unnamed constraint on [dbo].[DiarioPaziente] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[FenotipoPaziente] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[MessageLogging] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Paziente] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ValoriNutrizionali] (Default Constraint)
+       [dbo].[fk_DiarioPaziente_Paziente_IdPaziente] (Foreign Key)
+       [dbo].[fk_FenotipoPaziente_Paziente_IdPaziente] (Foreign Key)
+
+** Supporting actions

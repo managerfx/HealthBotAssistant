@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HealthAssistantModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__RefactorLog">
+    <Key>
+      <PropertyRef Name="OperationKey" />
+    </Key>
+    <Property Name="OperationKey" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DiarioPaziente">
+    <Key>
+      <PropertyRef Name="ProgEvento" />
+    </Key>
+    <Property Name="ProgEvento" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPaziente" Type="bigint" Nullable="false" />
+    <Property Name="Chiave" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Valore" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataOraInserimento" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FenotipoPaziente">
+    <Key>
+      <PropertyRef Name="ProgFenotipo" />
+    </Key>
+    <Property Name="ProgFenotipo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPaziente" Type="bigint" Nullable="false" />
+    <Property Name="Chiave" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Valore" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataOraInserimento" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MessageLogging">
+    <Key>
+      <PropertyRef Name="ProgLog" />
+    </Key>
+    <Property Name="ProgLog" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPaziente" Type="bigint" Nullable="false" />
+    <Property Name="MessageInput" Type="text" Nullable="false" />
+    <Property Name="MessageOutput" Type="text" />
+    <Property Name="DataOraInserimento" Type="datetime" Nullable="false" />
+    <Property Name="IsMessaggioNonGestito" Type="bit" />
+  </EntityType>
+  <EntityType Name="Paziente">
+    <Key>
+      <PropertyRef Name="IdPaziente" />
+    </Key>
+    <Property Name="IdPaziente" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Cognome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CodiceFiscale" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="DataNascita" Type="datetime" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="30" />
+    <Property Name="Password" Type="varchar" MaxLength="10" />
+    <Property Name="ConversationId" Type="varchar" MaxLength="100" />
+    <Property Name="FromId" Type="varchar" MaxLength="100" />
+    <Property Name="FromName" Type="varchar" MaxLength="100" />
+    <Property Name="DataPrimoInserimento" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ValoriNutrizionali">
+    <Key>
+      <PropertyRef Name="Nome" />
+    </Key>
+    <Property Name="Nome" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Pezzi" Type="int" Nullable="false" />
+    <Property Name="Grammi" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="CarboidratiSemplici" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="CarboidratiComplessi" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Fibre" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Proteine" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Acqua" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_DiarioPaziente_Paziente_IdPaziente">
+    <End Role="Paziente" Type="Self.Paziente" Multiplicity="1" />
+    <End Role="DiarioPaziente" Type="Self.DiarioPaziente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paziente">
+        <PropertyRef Name="IdPaziente" />
+      </Principal>
+      <Dependent Role="DiarioPaziente">
+        <PropertyRef Name="IdPaziente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_FenotipoPaziente_Paziente_IdPaziente">
+    <End Role="Paziente" Type="Self.Paziente" Multiplicity="1" />
+    <End Role="FenotipoPaziente" Type="Self.FenotipoPaziente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paziente">
+        <PropertyRef Name="IdPaziente" />
+      </Principal>
+      <Dependent Role="FenotipoPaziente">
+        <PropertyRef Name="IdPaziente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HealthAssistantModelStoreContainer">
+    <EntitySet Name="__RefactorLog" EntityType="Self.__RefactorLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DiarioPaziente" EntityType="Self.DiarioPaziente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FenotipoPaziente" EntityType="Self.FenotipoPaziente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MessageLogging" EntityType="Self.MessageLogging" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paziente" EntityType="Self.Paziente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ValoriNutrizionali" EntityType="Self.ValoriNutrizionali" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_DiarioPaziente_Paziente_IdPaziente" Association="Self.fk_DiarioPaziente_Paziente_IdPaziente">
+      <End Role="Paziente" EntitySet="Paziente" />
+      <End Role="DiarioPaziente" EntitySet="DiarioPaziente" />
+    </AssociationSet>
+    <AssociationSet Name="fk_FenotipoPaziente_Paziente_IdPaziente" Association="Self.fk_FenotipoPaziente_Paziente_IdPaziente">
+      <End Role="Paziente" EntitySet="Paziente" />
+      <End Role="FenotipoPaziente" EntitySet="FenotipoPaziente" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

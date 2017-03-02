@@ -1,0 +1,7 @@
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\bin\Debug\MSTest.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\bin\Debug\MSTest.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\obj\Debug\MSTest.csprojResolveAssemblyReference.cache
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\obj\Debug\MSTest.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\MSTest\obj\Debug\MSTest.pdb

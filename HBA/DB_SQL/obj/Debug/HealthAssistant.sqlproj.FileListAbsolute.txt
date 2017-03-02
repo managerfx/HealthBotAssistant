@@ -1,0 +1,5 @@
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\bin\Debug\HealthAssistant.dacpac
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\bin\Debug\HealthAssistant.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\bin\Debug\HealthAssistant.pdb
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\HealthAssistant.dll
+C:\personal_tfs\MedicalAssistant\Development\HealthAssistant\DB_SQL\obj\Debug\HealthAssistant.pdb
